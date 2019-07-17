@@ -2,7 +2,7 @@ import React from 'react';
 
 function SecondPage() {
   return (
-    <div className="SecondPage">
+    <div className="Page two">
       <p>second page stuff</p>
       <p>second page stuff</p>
       <p>second page stuff</p>
@@ -16,7 +16,7 @@ function SecondPage() {
       <p>second page stuff</p>
       <p>second page stuff</p>
       <p>second page stuff</p>
-      
+
     </div>
   );
 }

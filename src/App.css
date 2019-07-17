@@ -1,3 +1,11 @@
+html,
+body, 
+#root,
+.App,
+.Page { 
+  height: 100%;
+}
+
 .Menu {
   background-color: #282c34;
   padding: 7px;
@@ -10,6 +18,13 @@
   padding-right: 14px;
   text-decoration: none;
 }
+
+.Page {
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #282c34;
+}
+
 
 .App {
   text-align: center;
