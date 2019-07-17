@@ -5,11 +5,17 @@ import React from 'react';
 function Sketchpad() {
   // create canvas element and append it to document body
   var canvas = document.createElement('canvas');
-  document.body.appendChild(canvas);
+  window.onload = function() { 
+    var sketchpad = document.getElementById('Sketchpad')
+    sketchpad.append(canvas);
 
   // some hotfixes... ( ≖_≖)
   document.body.style.margin = 0;
-  canvas.style.position = 'fixed';
+  canvas.style.position = 'absolute';
+  canvas.style.top = '0';
+  canvas.style.right = '0';
+  canvas.style.bottom = '0';
+  canvas.style.left = '0';
 
   // get canvas 2D context and set him correct size
   var ctx = canvas.getContext('2d');
@@ -18,10 +24,9 @@ function Sketchpad() {
   // last known position
   var pos = { x: 0, y: 0 };
 
-  window.addEventListener('resize', resize);
-  document.addEventListener('mousemove', draw);
-  document.addEventListener('mousedown', setPosition);
-  document.addEventListener('mouseenter', setPosition);
+  sketchpad.addEventListener('mousemove', draw);
+  sketchpad.addEventListener('mousedown', setPosition);
+  sketchpad.addEventListener('mouseenter', setPosition);
 
   // new position from mouse event
   function setPosition(e) {
@@ -31,8 +36,8 @@ function Sketchpad() {
 
   // resize canvas
   function resize() {
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
+    ctx.canvas.width = sketchpad.offsetWidth;
+    ctx.canvas.height = sketchpad.offsetHeight;
   }
 
   function draw(e) {
@@ -51,9 +56,10 @@ function Sketchpad() {
 
     ctx.stroke(); // draw it!
   }
+  }
 
   return (
-    <div className="Sketchpad">
+    <div id="Sketchpad" className="Sketchpad">
     </div>
   );
 }
