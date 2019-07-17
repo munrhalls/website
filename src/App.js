@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './components/FirstPage';
+import './components/SecondPage';
+import FirstPage from './components/FirstPage';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>HELLO WORLD</h1>
-      </header>
+      <FirstPage />
     </div>
   );
 }
-
 export default App;
+
