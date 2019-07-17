@@ -25,11 +25,20 @@ class App extends React.Component {
         currentPage = <ThirdPage />;
         break;
       default:
-         currentPage = <div className="Menu">
-          <a href="/Sketchpad">Sketchpad</a>
-          <a href="/SecondPage">SecondPage</a>
-          <a href="/ThirdPage">ThirdPage</a>
+         currentPage = (
+         <div>
+
+          <div className="Menu">
+            <a href="/Sketchpad">Sketchpad</a>
+            <a href="/SecondPage">SecondPage</a>
+            <a href="/ThirdPage">ThirdPage</a>
+          </div>
+          <div className="Page">
+              <Sketchpad />;
+            </div>
+
         </div>
+        )
     }
 
 

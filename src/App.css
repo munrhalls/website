@@ -16,6 +16,13 @@ body,
   padding-top: 35px;
 }
 
+.Sketchpad {
+  border: 1px solid #ffffff;
+  width: 610px;
+  height: 610px;
+}
+
+
 .Menu {
   background-color: #282c34;
   padding: 7px;
