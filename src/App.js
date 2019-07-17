@@ -34,7 +34,7 @@ class App extends React.Component {
             <a href="/ThirdPage">ThirdPage</a>
           </div>
 
-          <Sketchpad />;
+          <Sketchpad />
 
 
         </div>
