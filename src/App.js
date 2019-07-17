@@ -13,10 +13,16 @@ class App extends React.Component {
 
     let url = window.location.pathname;
     let currentPage;
-    
+
     switch (url) {
       case '/FirstPage':
-         currentPage = <FirstPage />;
+        currentPage = <FirstPage />;
+        break;
+      case '/SecondPage':
+        currentPage = <SecondPage />;
+        break;
+      case '/ThirdPage':
+        currentPage = <ThirdPage />;
         break;
       default:
          currentPage = <div>
