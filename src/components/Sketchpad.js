@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FirstPage() {
+function Sketchpad() {
   return (
     <div className="Page one">
       <p>first page stuff</p> 
@@ -19,5 +19,5 @@ function FirstPage() {
     </div>
   );
 }
-export default FirstPage;
+export default Sketchpad;
 

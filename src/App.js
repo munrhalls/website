@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FirstPage from './components/FirstPage';
+import Sketchpad from './components/Sketchpad';
 import SecondPage from './components/SecondPage';
 import ThirdPage from './components/ThirdPage';
 
@@ -15,8 +15,8 @@ class App extends React.Component {
     let currentPage;
 
     switch (url) {
-      case '/FirstPage':
-        currentPage = <FirstPage />;
+      case '/Sketchpad':
+        currentPage = <Sketchpad />;
         break;
       case '/SecondPage':
         currentPage = <SecondPage />;
@@ -26,7 +26,7 @@ class App extends React.Component {
         break;
       default:
          currentPage = <div className="Menu">
-          <a href="/FirstPage">FirstPage</a>
+          <a href="/Sketchpad">Sketchpad</a>
           <a href="/SecondPage">SecondPage</a>
           <a href="/ThirdPage">ThirdPage</a>
         </div>
