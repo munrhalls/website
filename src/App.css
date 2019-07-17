@@ -1,3 +1,16 @@
+.Menu {
+  background-color: #282c34;
+  padding: 7px;
+}
+
+.Menu a {
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
