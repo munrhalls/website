@@ -3,7 +3,17 @@ body,
 #root,
 .App,
 .Page { 
+  display: flex;
+  flex-direction: column;
   height: 100%;
+}
+
+.Page {
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #282c34;
+
+  padding-top: 35px;
 }
 
 .Menu {
@@ -18,13 +28,6 @@ body,
   padding-right: 14px;
   text-decoration: none;
 }
-
-.Page {
-  color: #ffffff;
-  font-size: 14px;
-  background-color: #282c34;
-}
-
 
 .App {
   text-align: center;
