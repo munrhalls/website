@@ -41,9 +41,9 @@ function Sketchpad() {
 
     ctx.beginPath(); // begin
 
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 1;
     ctx.lineCap = 'round';
-    ctx.strokeStyle = '#c0392b';
+    ctx.strokeStyle = '#ffffff';
 
     ctx.moveTo(pos.x, pos.y); // from
     setPosition(e);
