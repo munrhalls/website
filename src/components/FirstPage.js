@@ -3,10 +3,19 @@ import React from 'react';
 function FirstPage() {
   return (
     <div className="FirstPage">
-      <header className="FirstPage-header">
-        <h1>HELLO WORLD</h1>
-        <p>cool man</p>
-      </header>
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      <p>first page stuff</p> 
+      
     </div>
   );
 }
